@@ -1,5 +1,5 @@
 # random
-from random import randint
+from random import randint, choice
 
   # Python comes with a built in random library. There are a lot of functions included in this random library, so we will only 
   #show you two useful functions for now.
@@ -14,14 +14,30 @@ dice5 = randint(1,6)
 dice6 = randint(1,6)
 
 my_gamble = dice1 + dice2 + dice3 + dice4 + dice5 + dice6
-if my_gamble % 2 == 1:
-  print("You almost won")
-elif my_gamble == 8:
-  print("Roll again")
-elif my_gamble > 12 and my_gamble < 18:
-  print("You lost")
-else:
-  print("you win")
+# if my_gamble % 2 == 1:
+#   print("You almost won")
+# elif my_gamble == 8:
+#   print("Roll again")
+# elif my_gamble > 12 and my_gamble < 18:
+#   print("You lost")
+# else:
+#   print("you win")
+
+
+
+
+
+
+# dictionary1 = {}
+# color = ['blue', 'red', 'green', 'turquoise', 'purple']
+# myRandom = choice(color)
+# print(myRandom)
+myCharacters = ['Rogue', 'Elf', 'Knight', 'Ninja', 'Samurai']
+for character in myCharacters:
+  if my_gamble == character[0]:
+    print(character)
+  else:
+    print(my_gamble)
   # from random import shuffle
   # # This shuffles the list "in-place" meaning it won't return
   # # anything, instead it will effect the list passed
